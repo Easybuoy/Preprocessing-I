@@ -2,6 +2,27 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.red {
+  background-color: #ed4323;
+}
+.green {
+  background-color: #28a745;
+}
+.black {
+  background-color: #343a40;
+}
+.purple {
+  background-color: #6f42c1;
+}
+.blue {
+  background-color: #007bff;
+}
+.orange {
+  background-color: #f89414;
+}
+.yellow {
+  background-color: #f5de1a;
+}
 html,
 body,
 div,
@@ -136,8 +157,21 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 h1,
+h2,
 h3 {
   text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #006bb3;
+}
+h3 {
+  font-size: 1.2rem;
+}
+p {
+  line-height: 1.3rem;
 }
 .container {
   display: flex;
@@ -163,13 +197,13 @@ nav a:hover {
   color: #b3e0ff;
 }
 header {
-  display: flex;
   width: 90%;
+  margin: 0 50px;
+  padding: 50px;
+  display: flex;
   justify-content: space-around;
-  margin: 30px 50px;
   height: 600px;
   background-color: #eaecef;
-  padding: 50px;
   align-items: center;
 }
 header .header-image {
@@ -183,16 +217,85 @@ header .header-text {
   width: 40%;
 }
 header .header-text h1 {
-  text-align: center;
   font-size: 2rem;
   margin-bottom: 1.1rem;
   color: #1aa3ff;
 }
 header .header-text h3 {
-  text-align: center;
-  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-p {
-  line-height: 1.3rem;
+.skills {
+  width: 90%;
+  margin: 0 50px;
+  padding: 50px;
+}
+.skills .skill-button {
+  justify-content: center;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.75);
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 20px 25px;
+}
+.skills .skill-button .skill-button-text {
+  margin: 0.5rem;
+  text-transform: uppercase;
+}
+.work-history {
+  width: 90%;
+  margin: 0 50px;
+  padding: 50px;
+  background-color: #d2d2d2;
+}
+.work-history .company {
+  margin: 2rem 0;
+}
+.work-history .company .company-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.work-history .company .company-info img {
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+.work-history .company h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #006bb3;
+}
+.work-history .company p {
+  margin-bottom: 1rem;
+}
+.work-history .company li {
+  margin-bottom: 0.8rem;
+}
+.contact {
+  width: 90%;
+  margin: 0 50px;
+  padding: 50px;
+  background-color: #eaecef;
+}
+.contact .contact-options {
+  text-align: center;
+  margin: 2rem;
+}
+.contact .contact-options a {
+  text-decoration: none;
+  color: #343a40;
+  margin: 1.5rem 3rem;
+}
+footer {
+  width: 90%;
+  margin: 0 50px;
+  padding: 50px;
+  color: #1aa3ff;
+  text-align: center;
 }

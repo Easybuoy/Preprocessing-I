@@ -5,9 +5,12 @@
 */
 
 @import "colors.less";
+@import "buttons.less";
 
+// Font sizes
 @largeFontSize: 2rem;
 @mediumFontSize: 1rem;
+
 
 
 html, body, div, span, applet, object, iframe,
@@ -68,14 +71,35 @@ html, body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
   }
+
+h2 {
+		font-size: @mediumFontSize + .5rem;
+		color: @secondaryColor;
+  }
+
+h3 {
+	font-size: @mediumFontSize + .2rem;
+}
+
+p {
+	line-height: 1.3rem;
+}
 
 .container {
     display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+}
+
+.section-mixin() {
+	width: 90%;
+	margin: 0 50px;
+	padding: 50px;
 }
 
 nav {
@@ -103,13 +127,12 @@ nav {
 }
 
   header{
+	  .section-mixin();
+
 	  display: flex;
-	  width: 90%;
 	  justify-content: space-around;
-	  margin: 30px 50px;
 	  height: 600px;
-	  background-color: #eaecef;
-	  padding: 50px;
+	  background-color: @primaryBackgroundColor;
 	  align-items: center;
 	  
 	  .header-image {
@@ -118,6 +141,7 @@ nav {
 		img {
 			width: 500px;
 			height: 350px;
+			// border-radius: 70%;
 		}
 	  }
 
@@ -125,31 +149,101 @@ nav {
 		  width: 40%;
 
 		  h1 {
-			  text-align: center;
 			  font-size: @largeFontSize;
 			  margin-bottom: @mediumFontSize + .1rem;
 			  color: @primaryColor;
 		  }
 
 		  h3 {
-			  text-align: center;
-			  font-size: @mediumFontSize + .2rem;
 			  margin-bottom: 2rem;
 		  }
 	  }
   }
 
-  
+  .skills {
+	  .section-mixin();
 
-  p {
-	  line-height: 1.3rem;
+	  .skill-button {
+		justify-content: center;
+		border-radius: 0.3rem;
+		font-size: 1rem;
+		-webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+		box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+
+		color: @white;
+		font-weight: bold;
+
+		border: none;
+		margin: 20px 25px;
+
+		.skill-button-text {
+		  margin: .5rem;
+		  text-transform: uppercase;
+		}
+	  }
+
+	  
   }
 
+  .work-history {
+	.section-mixin();
+	  background-color: @secondaryBackgroundColor;
 
-// nav ul li {
-//     margin: 20px 50px;
+	  .company {
+		  margin: 2rem 0;
 
-//     a {
-//         text-decoration: none;
-//     }
-// }
+		  .company-info {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 1rem;
+	
+			img {
+				margin-right: 1rem;
+				width: @largeFontSize + @mediumFontSize;
+				height: @largeFontSize + @mediumFontSize;
+			}
+		  }
+		  
+		  h4 {
+			  font-weight: bold;
+			  font-size: @mediumFontSize + .2rem;
+			  margin-bottom: 1rem;
+			  color: @secondaryColor;
+		  }
+	
+		  p {
+			  margin-bottom: 1rem;
+		  }
+	
+		  li {
+			  margin-bottom: .8rem;
+		  }
+	  }
+  }
+
+  .contact {
+	.section-mixin();
+	  background-color: @primaryBackgroundColor;
+
+	  .contact-options {
+		  text-align: center;
+		  margin: 2rem;
+		  
+		a {
+			text-decoration: none;
+			color: @blackButtonColor;
+			margin: 1.5rem 3rem;
+		}
+	  }
+
+	  
+  }
+  
+  footer {
+	.section-mixin();
+
+	color: @primaryColor;
+	text-align: center;
+  }
