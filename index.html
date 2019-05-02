@@ -5,7 +5,8 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,103 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+      <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <header>
+          <div class="header-image">
+              <img src="img/aboutimg.JPG" />
+          </div>
+
+          <div class="header-text">
+            <h1>Ezekiel Ekunola</h1>
+            <h3>Software Engineer</h3>
+            <p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in NODE, REACT, MONGODB, PHP, JAVASCRIPT, HTML, Search Engine Optimization (SEO), and Computer Hardware. Strong engineering professional graduated from Aptech Computer Education.</p>
+          </div>
+        </header>
+
+        <section class="skills">
+          <h2>Skills</h2>
+
+          <button class="skill-button green"><p class="skill-button-text"><i class="fab fa-node"></i>  Node</p></button>
+          <button class="skill-button blue"><p class="skill-button-text"><i class="fab fa-react"></i>  React</p></button>
+          <button class="skill-button purple"><p class="skill-button-text">Redux</p></button>
+          <button class="skill-button green"><p class="skill-button-text">Mongodb</p></button>
+          <button class="skill-button blue"><p class="skill-button-text"><i class="fab fa-php"></i> Php</p></button>
+          <button class="skill-button red"><p class="skill-button-text"><i class="fab fa-laravel"></i> Laravel</p></button>
+          <button class="skill-button red"><p class="skill-button-text">Codeigniter</p></button>
+          <button class="skill-button blue"><p class="skill-button-text">Yii</p></button>
+          <button class="skill-button blue"><p class="skill-button-text"><i class="fab fa-java"></i> Java</p></button>
+          <button class="skill-button yellow"><p class="skill-button-text"><i class="fab fa-js"></i> Javascript</p></button>
+          <button class="skill-button black"><p class="skill-button-text"><i class="fab fa-github"></i> Github</p></button>
+          <button class="skill-button red"><p class="skill-button-text"><i class="fab fa-gitlab"></i> Gitlab</p></button>
+          <button class="skill-button blue"><p class="skill-button-text"><i class="fab fa-wordpress"></i> Wordpress</p></button>
+          <button class="skill-button black"><p class="skill-button-text"><i class="fab fa-joomla"></i> Joomla</p></button>
+          <button class="skill-button purple"><p class="skill-button-text">Heroku</p></button>
+          <button class="skill-button orange"><p class="skill-button-text"><i class="fab fa-aws"></i> Aws</p></button>
+        </section>
+
+        <section class="work-history">
+            <h2>Work History</h2>
+
+            <div class="company">
+                <div class="company-info">
+                    <img src="img/0.png" />
+                    <h4>Andela</h4>
+                </div>
+                
+                <p>Job Description: Software Enigneer</p>
+                <p>Duration: 5 months</p>
+                <p>Location: Lagos, Nigeria</p>
+    
+                <li>I worked with a store manager application using react and redux. </li>
+                <hr>
+            </div>
+
+            <div class="company">
+                <div class="company-info">
+                    <img src="img/1.png" />
+                    <h4>Bincom ICT Solutions</h4>
+                </div>
+                
+                <p>Job Description: Junior Associate Web Developer</p>
+                <p>Duration: 1yr 3month</p>
+                <p>Location: Lagos, Nigeria</p>
+    
+                <li>I worked with building conversational messaging app (chatbots) with dialogflow. </li>
+                <li>Also worked with integrating different complex API endpoints to mobile, web applications. </li>
+                <li>I also worked with building web application with Laravel Framework.</li>
+                <li>I worked on managing, creating and integrating several API solutions.</li>
+                <li>I worked on integrating payment solution like (Paystack, Flutterwave, Banks) to different web applications/solutions. </li>
+                <li>I wrote clean, modular, and reusable code in development of web solutions.</li>
+                <hr>
+            </div>
+            
+
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-options">
+                <a href="mailto:ekunolaeasybuoy@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/easybuoy/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/easybuoy" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            </div>
+        </section>
+
+        <footer>
+          &copy; easybuoy 2019
+        </footer>
+  </div>
+  
+
 </body>
 </html>
